@@ -36,7 +36,7 @@ def ChannelClear(channelID):
         multiChannel -= channelValue
 
 def ValidateValue(value):
-    if value < 999 and value > 0: 
+    if 0 <= value <= 999:       #From "if value < 999 and value > 0:" 
         return True
     else:
         print("Value out of range, operation not performed") 
