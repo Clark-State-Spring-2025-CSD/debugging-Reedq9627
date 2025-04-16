@@ -15,7 +15,7 @@ def ChannelAdd(channelID, value):
     global multiChannel
 
     currentValue = ChannelGetValue(channelID)
-    currentValue -= value
+    currentValue += value  #Changed minus sign to a plus
     if not ValidateValue(currentValue): return
     ChannelSetValue(channelID, currentValue)
 
